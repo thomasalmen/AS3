@@ -1,0 +1,13 @@
+when HTTP_REQUEST {
+   HTTP::respond 200 content {
+      <html>
+         <head>
+            <title>Meddelande om underh&aring;ll</title>
+         </head>
+         <body>
+            Sidan &auml;r tillf&auml;lligt avst&auml;ngd pga underh&aring;ll.
+            Vi &auml;r strax tillbaka =)
+         </body>
+      </html>
+   } noserver Cache-Control no-cache Connection Close
+}
